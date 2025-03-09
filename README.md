@@ -36,7 +36,8 @@ The final model is an LSTM-based neural network:
 ### ✅ Evaluation
 - **Root Mean Squared Error (RMSE):**  
 ```bash
-RMSE: {rmse:.4f}
+RMSE: 3.65
+MSE: 2.65
 ## Directional Accuracy
 Measures how often the model correctly predicts the direction of price movement.
 
@@ -45,11 +46,12 @@ Measures how often the model correctly predicts the direction of price movement.
 ## 📅 Prediction for Next 5 Days
 | Day | Predicted Close Price (USD) |
 |------|-----------------------------|
-| Day 1 | `{future_predictions[0][0]}` |
-| Day 2 | `{future_predictions[1][0]}` |
-| Day 3 | `{future_predictions[2][0]}` |
-| Day 4 | `{future_predictions[3][0]}` |
-| Day 5 | `{future_predictions[4][0]}` |
+| Day 1 | [200.5243 ] |
+| Day 2 | [201.29904] |
+| Day 3 | [201.97197]|
+| Day 4 | [202.63661]|
+| Day 5 | [203.34831] |
+
 
 ---
 
@@ -88,14 +90,10 @@ Measures how often the model correctly predicts the direction of price movement.
 ## 📄 Results
 | Metric | Value |
 |--------|-------|
-| RMSE | `{rmse:.4f}` |
-| Directional Accuracy | `{directional_accuracy}%` |
+| RMSE   | 3.65  |
+| MSE    | 2.65  |
+| Directional Accuracy | 49.55% |
 
----
-
-
-
----
 
 ## ✅ License
 This project is licensed under the **Apache License** – see the LICENSE file for details.
