@@ -11,7 +11,7 @@
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 The final model is an LSTM-based neural network:
 
 | Layer | Units | Activation | Output Shape |
@@ -27,75 +27,75 @@ The final model is an LSTM-based neural network:
 
 ---
 
-## 📈 Training and Evaluation
-### ✅ Training
-- Trained on **95%** of the dataset.  
+## Training and Evaluation
+### Training
 - **Batch Size**: 8  
 - **Epochs**: 10 (can be increased for better performance)  
 
-### ✅ Evaluation
-- **Root Mean Squared Error (RMSE):**  
+### Evaluation
 ```bash
 RMSE: 3.65
 MSE: 2.65
+```
+
 ## Directional Accuracy
 Measures how often the model correctly predicts the direction of price movement.
 
----
+```bash
 
-## 📅 Prediction for Next 5 Days
+## Prediction for Next 5 Days
 | Day | Predicted Close Price (USD) |
 |------|-----------------------------|
 | Day 1 | [200.5243 ] |
 | Day 2 | [201.29904] |
-| Day 3 | [201.97197]|
-| Day 4 | [202.63661]|
+| Day 3 | [201.97197] |
+| Day 4 | [202.63661] |
 | Day 5 | [203.34831] |
 
 
----
+```
 
-## ⚠️ Limitations
+## Limitations
 - Model struggles with extreme market volatility.  
 - Insufficient data volume for robust generalization.  
 - No external market data (e.g., interest rates, news events) included in the model.  
 
----
 
-## 💡 Proposed Improvements
+
+## Proposed Improvements
 - Include more external market indicators (e.g., interest rates, GDP data).  
 - Teat with training epochs and sequence length for improved accuracy. 
 - Generate Dataset
 
----
 
-## 📜 Reproduction Guide
-### ✅ Preprocessing
+
+## Reproduction Guide
+### Preprocessing
 1. Load the CSV file.  
 2. Fill missing values using a **5-day rolling mean**.  
 3. Scale data using **MinMaxScaler**.  
 
-### ✅ Training
+### Training
 1. Create training sequences (60-day window).  
 2. Train LSTM model with **128 and 64 units**.  
 3. Evaluate using **RMSE** and **directional accuracy**.  
 
-### ✅ Prediction
+### Prediction
 1. Use the final sequence to predict next 5 days.  
 2. Inverse transform the results using the scaler.  
 3. Save predictions to **future_predictions.csv**.  
 
----
+```bash
 
-## 📄 Results
+## Results
 | Metric | Value |
 |--------|-------|
 | RMSE   | 3.65  |
 | MSE    | 2.65  |
 | Directional Accuracy | 49.55% |
 
-
-## ✅ License
+```
+## License
 This project is licensed under the **Apache License** – see the LICENSE file for details.
 
----
+
