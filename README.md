@@ -2,6 +2,11 @@
 
 # Stock Price Prediction Challenge
 
+
+## Reports
+- [Report available at Intellihack_Sidemen_4_report_part1.pdf](./Intellihack_Sidemen_4_report_part1.pdf)  
+- [Report available at Intellihack_Sidemen_4_report_part2.pdf](./Intellihack_Sidemen_4_report_part2.pdf)  
+
 ## Exploratory Data Analysis
 
 - **Line Plot**: Compared Close and Adjusted Close prices.  
